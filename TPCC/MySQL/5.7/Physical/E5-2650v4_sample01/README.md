@@ -19,3 +19,4 @@ Measure 1200 seconds
 
 ---
 - 500 Warehouse
+<p><img src="https://raw.githubusercontent.com/goldstrike77/Benchmarks/master/TPCC/MySQL/5.7/Physical/E5-2650v4_sample01/result/w500/w500.png" align="left" /></p>
