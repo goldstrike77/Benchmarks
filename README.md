@@ -1,0 +1,5 @@
+## Overview ##
+A workload represents the load that a given application will put on the system. For benchmarking purposes, we must define workloads that are relatively simple compared to real applications, so that we can better reason about the benchmarking results we get. a workload should be detailed enough so that once we measure the system’s performance, we know what kinds of applications might experience similar performance.
+
+## Limitations ##
+Benchmarks measure different aspects of processor and/or system performance. While no single numerical measurement can completely describe the performance of a complex device like a microprocessor or a server, benchmarks can be useful tools for comparing different components and systems. The only totally accurate way to measure the performance of your system, however, is to test the applications you use on your computer system. Benchmark results are measured on specific systems or components using specific hardware and software configurations, and any differences between those configurations (including software) and your configuration may very well make those results inapplicable to your component or system.
