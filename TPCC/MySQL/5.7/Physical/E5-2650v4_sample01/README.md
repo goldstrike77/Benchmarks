@@ -10,8 +10,8 @@ CentOS 6.10 kernel 2.6.32-754.10.1.el6.x86_64
 ## MySQL Version ##
 Percona Server for MySQL 5.7.24-27
 
-## Benchmark Method ##
-Measure 1200 seconds
+## Measurement Time ##
+1200 seconds
 
 ## Benchmark Results ##
 - 200 Warehouse
