@@ -8,7 +8,7 @@ CentOS 6.10 kernel 2.6.32-754.10.1.el6.x86_64
 - Gigabit Ethernet
 
 ## MongoDB Version ##
-Percona Server for MongoDB 3.6.8-2.0
+Percona Server for MongoDB 3.6.8-2.0, WiredTiger Storage Engine with Journal
 
 ## Measurement ##
 - 10 Million documents operation, each with 1 KB (10 fields, 100 bytes each, plus key) data size
