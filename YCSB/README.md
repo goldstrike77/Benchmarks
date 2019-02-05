@@ -23,3 +23,22 @@ Because there are many new serving databases available, including:
 It is difficult to decide which system is right for your application, partially because the features differ between systems, and partially because there is not an easy way to compare the performance of one system versus another.
 
 A common use of the tool is to benchmark multiple systems and compare them. For example, you can install multiple systems on the same hardware configuration, and run the same workloads against each system. Then you can plot the performance of each system (for example, as latency versus throughput curves) to see when one system does better than another.
+
+YCSB was contrasted with the TPC-H benchmark from the Transaction Processing Performance Council, with YCSB being called a big data benchmark while TPC-H is a decision support system benchmark.
+
+YCSB includes a set of core workloads that define a basic benchmark for cloud systems. Of course, you can define your own workloads, as described in Implementing New Workloads. However, the core workloads are a useful first step, and obtaining these benchmark numbers for a variety of different systems would allow you to understand the performance
+tradeoffs of different systems.
+
+The core workloads consist of six different workloads:
+
+1. Workload A: Update heavy workload, This workload has a mix of 50/50 reads and writes. An application example is a session store recording recent actions.
+
+2. Workload B: Read mostly workload, This workload has a 95/5 reads/write mix. Application example: photo tagging; add a tag is an update, but most operations are to read tags.
+
+3. Workload C: Read only, This workload is 100% read. Application example: user profile cache, where profiles are constructed elsewhere (e.g., Hadoop).
+
+4. Workload D: Read latest workload, In this workload, new records are inserted, and the most recently inserted records are the most popular. Application example: user status updates; people want to read the latest.
+
+5. Workload E: Short ranges, In this workload, short ranges of records are queried, instead of individual records. Application example: threaded conversations, where each scan is for the posts in a given thread (assumed to be clustered by thread id).
+
+6. Workload F: Read-modify-write, In this workload, the client will read a record, modify it, and write back the changes. Application example: user database, where user records are read and modified by the user or to record user activity.

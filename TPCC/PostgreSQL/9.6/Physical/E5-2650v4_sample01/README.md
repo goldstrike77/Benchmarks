@@ -10,8 +10,8 @@ CentOS 6.10 kernel 2.6.32-754.10.1.el6.x86_64
 ## PostgreSQL Version ##
 Postgres Pro 9.6.11.1
 
-## Measurement Time ##
-1200 seconds
+## Measurement ##
+- 1200 seconds
 
 ## Benchmark Results ##
 - 205 Warehouse
