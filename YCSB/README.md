@@ -31,14 +31,20 @@ tradeoffs of different systems.
 
 The core workloads consist of six different workloads:
 
-1. Workload A: Update heavy workload, This workload has a mix of 50/50 reads and writes. An application example is a session store recording recent actions.
+1. Workload A: Update heavy workload, Read/update ratio: 50/50
+This workload has a mix of 50/50 reads and writes. An application example is a session store recording recent actions.
 
-2. Workload B: Read mostly workload, This workload has a 95/5 reads/write mix. Application example: photo tagging; add a tag is an update, but most operations are to read tags.
+2. Workload B: Read mostly workload, Read/update ratio: 95/5
+This workload has a 95/5 reads/write mix. Application example: photo tagging; add a tag is an update, but most operations are to read tags.
 
-3. Workload C: Read only, This workload is 100% read. Application example: user profile cache, where profiles are constructed elsewhere (e.g., Hadoop).
+3. Workload C: Read only, Read/update ratio: 100/0
+This workload is 100% read. Application example: user profile cache, where profiles are constructed elsewhere (e.g., Hadoop).
 
-4. Workload D: Read latest workload, In this workload, new records are inserted, and the most recently inserted records are the most popular. Application example: user status updates; people want to read the latest.
+4. Workload D: Read latest workload,Read/update/insert ratio: 95/0/5
+ In this workload, new records are inserted, and the most recently inserted records are the most popular. Application example: user status updates; people want to read the latest.
 
-5. Workload E: Short ranges, In this workload, short ranges of records are queried, instead of individual records. Application example: threaded conversations, where each scan is for the posts in a given thread (assumed to be clustered by thread id).
+5. Workload E: Short ranges, Scan/insert ratio: 95/5
+In this workload, short ranges of records are queried, instead of individual records. Application example: threaded conversations, where each scan is for the posts in a given thread (assumed to be clustered by thread id).
 
-6. Workload F: Read-modify-write, In this workload, the client will read a record, modify it, and write back the changes. Application example: user database, where user records are read and modified by the user or to record user activity.
+6. Workload F: Read-modify-write, Read/read-modify-write ratio: 50/50
+In this workload, the client will read a record, modify it, and write back the changes. Application example: user database, where user records are read and modified by the user or to record user activity.
