@@ -37,7 +37,7 @@ The core workloads consist of six different workloads:
 
 3. Workload C: Read only, Read/update ratio 100/0, This workload is 100% read. Application example: user profile cache, where profiles are constructed elsewhere (e.g., Hadoop).
 
-4. Workload D: Read latest workload,Read/update/insert ratio 95/0/5, In this workload, new records are inserted, and the most recently inserted records are the most popular. Application example: user status updates; people want to read the latest.
+4. Workload D: Read latest workload, Read/update/insert ratio 95/0/5, In this workload, new records are inserted, and the most recently inserted records are the most popular. Application example: user status updates; people want to read the latest.
 
 5. Workload E: Short ranges, Scan/insert ratio 95/5, In this workload, short ranges of records are queried, instead of individual records. Application example: threaded conversations, where each scan is for the posts in a given thread (assumed to be clustered by thread id).
 
