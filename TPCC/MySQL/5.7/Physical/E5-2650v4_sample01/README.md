@@ -8,7 +8,7 @@ CentOS 6.10 kernel 2.6.32-754.10.1.el6.x86_64
 - Gigabit Ethernet
 
 ## MySQL Version ##
-Percona Server for MySQL 5.7.24-27
+Percona Server for MySQL 5.7.24-27, InnoDB Storage Engine with Binary log
 
 ## Measurement ##
 - 1200 seconds

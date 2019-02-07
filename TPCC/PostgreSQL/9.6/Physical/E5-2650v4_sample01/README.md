@@ -8,7 +8,7 @@ CentOS 6.10 kernel 2.6.32-754.10.1.el6.x86_64
 - Gigabit Ethernet
 
 ## PostgreSQL Version ##
-Postgres Pro 9.6.11.1
+Postgres Pro 9.6.11.1, Archive mode
 
 ## Measurement ##
 - 1200 seconds
