@@ -7,8 +7,8 @@ CentOS 6.10 kernel 2.6.32-754.10.1.el6.x86_64
 - ST9500620SS 500GB 7200RPM 2.5-inch NL-SAS 6Gb * 4 RAID10
 - Gigabit Ethernet
 
-## MongoDB Version ##
-Percona Server for MongoDB 3.6.8-2.0, WiredTiger Storage Engine with Journal
+## Redis Version ##
+Redis 5.0.3
 
 ## Measurement ##
 - 10 Million documents operation, each with 1 KB (10 fields, 100 bytes each, plus key) data size
@@ -18,15 +18,15 @@ Percona Server for MongoDB 3.6.8-2.0, WiredTiger Storage Engine with Journal
     ┌──────────────┬─────────────────────┐
     │   Workload   │ Throughput(ops/sec) │
     ├──────────────┼─────────────────────┤
-    │       A      │           90,391.39 │
+    │       A      │           84,437.35 │
     ├──────────────┼─────────────────────┤
-    │       B      │          138,400.64 │
+    │       B      │           83,803.33 │
     ├──────────────┼─────────────────────┤
-    │       C      │          154,038.11 │
+    │       C      │           85,184.68 │
     ├──────────────┼─────────────────────┤
-    │       D      │          149,004.64 │
+    │       D      │           80,822.45 │
     ├──────────────┼─────────────────────┤
-    │       E      │           13,718.21 │
+    │       E      │            1,579.47 │
     ├──────────────┼─────────────────────┤
-    │       F      │           57,260.97 │
+    │       F      │           59,295.10 │
     └──────────────┴─────────────────────┘
