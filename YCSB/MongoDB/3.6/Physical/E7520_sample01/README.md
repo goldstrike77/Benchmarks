@@ -2,9 +2,9 @@
 CentOS 6.10 kernel 2.6.32-754.10.1.el6.x86_64
 
 ## Hardware Specifications ##
-- Intel(R) Xeon(R) Processor E5-2650 v4 2.20GHz * 2, Broadwell Q1'16, disable Hyper-threading 
-- 64G DDR4 2133 MHz Memory
-- 500GB 7200RPM 2.5-inch NL-SAS 6Gb * 4 RAID10
+- Intel(R) Xeon(R) Processor E7520 1.87GHz * 4, Nehalem-EX Q1'10, disable Hyper-threading 
+- 32G DDR3 1333 MHz Memory
+- 300G 10000RPM 2.5-inch SAS 6Gb * 4 RAID10
 - Gigabit Ethernet
 
 ## MongoDB Version ##
@@ -20,17 +20,17 @@ Percona Server for MongoDB 3.6.10-3.0, WiredTiger Storage Engine with Journal
     ┌──────────────┬─────────────────────┐
     │   Workload   │ Throughput(ops/sec) │
     ├──────────────┼─────────────────────┤
-    │     load     │           67,135.27 │
+    │     load     │           64,105.85 │
     ├──────────────┼─────────────────────┤
-    │       A      │           97,643.85 │
+    │       A      │          137,147.87 │
     ├──────────────┼─────────────────────┤
-    │       B      │           76,936.09 │
+    │       B      │          122,129.95 │
     ├──────────────┼─────────────────────┤
-    │       C      │           85,319.86 │
+    │       C      │          120,727.75 │
     ├──────────────┼─────────────────────┤
-    │       D      │           85,758.88 │
+    │       D      │           87,163.44 │
     ├──────────────┼─────────────────────┤
-    │       E      │            2,051.56 │
+    │       E      │            1,987.12 │
     ├──────────────┼─────────────────────┤
-    │       F      │           60,652.74 │
+    │       F      │           67,419.51 │
     └──────────────┴─────────────────────┘
