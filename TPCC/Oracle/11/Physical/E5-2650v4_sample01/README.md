@@ -16,3 +16,6 @@ Oracle Database 11g Enterprise Edition with Patch Set Update 11.2.0.4.180717 (27
 ## Benchmark Results ##
 - 205 Warehouse
 <p><img src="https://raw.githubusercontent.com/goldstrike77/Benchmarks/master/TPCC/Oracle/11/Physical/E5-2650v4_sample01/result/w205/w205.png" /></p>
+
+- 500 Warehouse
+<p><img src="https://raw.githubusercontent.com/goldstrike77/Benchmarks/master/TPCC/Oracle/11/Physical/E5-2650v4_sample01/result/w500/w500.png" /></p>
