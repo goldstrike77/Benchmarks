@@ -1,14 +1,14 @@
 ## Operating System ##
-CentOS 6.10 kernel 2.6.32-754.10.1.el6.x86_64
+CentOS 7.9 kernel 3.10.0-1160.41.1.el7.x86_64
 
 ## Hardware Specifications ##
-- Intel(R) Xeon(R) Processor E5-2650 v4 2.20GHz * 2, Broadwell Q1'16, disable Hyper-threading 
-- 64G DDR4 2133 MHz Memory
-- 500GB 7200RPM 2.5-inch NL-SAS 6Gb * 4 RAID10
+- Intel(R) Xeon(R) Silver 4214R 2.40GHz * 2, Cascade Lake Q1'20, disable Hyper-threading 
+- 128G DDR4 2400 MHz Memory
+- 480GB 6Gbps SATA MU TLC 2.5 SSD * 8 RAID10
 - Gigabit Ethernet
 
 ## Redis Version ##
-Redis 5.0.3 with AOF persistence
+Redis 5.0.13 with AOF persistence
 
 ## Measurement ##
 - 10 Million documents operation, each with 1 KB (10 fields, 100 bytes each, plus key) data size
@@ -18,15 +18,15 @@ Redis 5.0.3 with AOF persistence
     ┌──────────────┬─────────────────────┐
     │   Workload   │ Throughput(ops/sec) │
     ├──────────────┼─────────────────────┤
-    │       A      │           84,437.35 │
+    │       A      │           77,788.93 │
     ├──────────────┼─────────────────────┤
-    │       B      │           83,803.33 │
+    │       B      │           73,397.73 │
     ├──────────────┼─────────────────────┤
-    │       C      │           85,184.68 │
+    │       C      │           74,205.45 │
     ├──────────────┼─────────────────────┤
-    │       D      │           80,822.45 │
+    │       D      │           69,753.00 │
     ├──────────────┼─────────────────────┤
-    │       E      │            1,579.47 │
+    │       E      │            1,383.20 │
     ├──────────────┼─────────────────────┤
-    │       F      │           59,295.10 │
+    │       F      │           52,926.57 │
     └──────────────┴─────────────────────┘
