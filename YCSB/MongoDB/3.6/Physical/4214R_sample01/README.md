@@ -8,25 +8,29 @@ CentOS 7.9 kernel 3.10.0-1160.41.1.el7.x86_64
 - Gigabit Ethernet
 
 ## Redis Version ##
-Redis 5.0.13 with AOF persistence
+Percona Server for MongoDB 3.6.23-13.0, WiredTiger Storage Engine with Journal
 
 ## Measurement ##
 - 10 Million documents operation, each with 1 KB (10 fields, 100 bytes each, plus key) data size
-- 32 threads
+- Requests no acknowledgment of the write operation
+- Synchronous driver
+- 64 threads
 
 ## Benchmark Results ##
     ┌──────────────┬─────────────────────┐
     │   Workload   │ Throughput(ops/sec) │
     ├──────────────┼─────────────────────┤
-    │       A      │           77,788.93 │
+    │     load     │          200,100.05 │
     ├──────────────┼─────────────────────┤
-    │       B      │           73,397.73 │
+    │       A      │          127,469.73 │
     ├──────────────┼─────────────────────┤
-    │       C      │           74,205.45 │
+    │       B      │           93,139.35 │
     ├──────────────┼─────────────────────┤
-    │       D      │           69,753.00 │
+    │       C      │           90,490.37 │
     ├──────────────┼─────────────────────┤
-    │       E      │            1,383.20 │
+    │       D      │           99,186.67 │
     ├──────────────┼─────────────────────┤
-    │       F      │           52,926.57 │
+    │       E      │            2,105.02 │
+    ├──────────────┼─────────────────────┤
+    │       F      │           75,309.71 │
     └──────────────┴─────────────────────┘
