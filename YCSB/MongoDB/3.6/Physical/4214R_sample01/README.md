@@ -7,7 +7,7 @@ CentOS 7.9 kernel 3.10.0-1160.41.1.el7.x86_64
 - 480GB 6Gbps SATA MU TLC 2.5 SSD * 8 RAID10
 - Gigabit Ethernet
 
-## Redis Version ##
+## MongoDB Version ##
 Percona Server for MongoDB 3.6.23-13.0, WiredTiger Storage Engine with Journal
 
 ## Measurement ##
